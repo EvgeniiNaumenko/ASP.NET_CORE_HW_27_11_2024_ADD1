@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            font-family: 'Times New Roman', serif;
+            color: #444;
+        }
+
+        h1 {
+            color: #8b0000;
+        }
+
+        .navigation {
+            margin: 20px;
+            font-size: 1.2rem;
+        }
+
+            .navigation a {
+                margin-right: 20px;
+            }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="/Home/Page1">Страница 1</a>
+        <a href="/Home/Page2">Страница 2</a>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
